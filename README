@@ -1,0 +1,13 @@
+Description:
+Ce projet concerne le developpement de composants pour l'utilisation d'un clavier amazigh (latin, tifinagh et français) sous linux.
+Pour le moment, ces developpements concernent uniquement les systèmes fonctionnant sous gnome.
+Ces composants sont delivrés tels quels. Nous ne considérons pas responsables des conséquences de leur utilisation.
+Nous sommes à votre disposition à l'adresse:
+bbelateche@gmail.com
+
+Badr eddine Belateche
+
+Contenu:
+Les fichiers necessaires pour la configuration du clavier
+
+Problèmes connus:
