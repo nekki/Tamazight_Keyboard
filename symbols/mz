@@ -1,4 +1,5 @@
 // Ce fichier contient la configuration du clavier tamazight en carctéres latins
+// bbelateche@gmail.com
 partial alphanumeric_keys
 xkb_symbols "amazigh-latin" {
 
