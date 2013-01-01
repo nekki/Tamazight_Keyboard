@@ -1,0 +1,52 @@
+// French AZERTY keyboard used when typing French
+partial alphanumeric_keys
+xkb_symbols "french" {
+    include "fr(basic)"
+
+    name[Group1]="French (Tamazgha)";
+};
+
+
+partial alphanumeric_keys
+xkb_symbols "amazigh-latin" {
+
+    include "latin"
+
+    name[Group1]="Amazigh (Tamazgha, Amazigh latin caracters)";
+	
+    key <AE01>	{ [ ampersand,          1,  onesuperior,   exclamdown ]	};
+    key <AE02>	{ [    eacute,          2,   asciitilde,    oneeighth ]	};
+    key <AE03>	{ [  quotedbl,          3,   numbersign,     sterling ]	};
+    key <AE04>	{ [apostrophe,          4,    braceleft,       dollar ]	};
+    key <AE05>	{ [ parenleft,          5,  bracketleft, threeeighths ]	};
+    key <AE06>	{ [     minus,          6,          bar,  fiveeighths ]	};
+    key <AE07>	{ [    egrave,          7,        grave, seveneighths ]	};
+    key <AE08>	{ [underscore,          8,    backslash,    trademark ]	};
+    key <AE09>	{ [  ccedilla,          9,  asciicircum,    plusminus ]	};
+    key <AE10>	{ [    agrave,          0,           at,       degree ]	};
+    key <AE11>	{ [parenright,     degree, bracketright, questiondown ]	};
+    key <AE12>	{ [     equal,       plus,   braceright,  dead_ogonek ]	};
+    key <AD01>	{ [         a,          A,           ae,           AE ]	};
+    key <AD02>	{ [         z,          Z, 0x1001E93, 0x1001E92 ]	};
+    key <AD03>	{ [         e,          E,     EuroSign,         cent ]	};
+    key <AD04>	{ [    r,    R, 0x1001E5B, 0x1001E5A]	};
+    key <AD05>	{ [    t,    T, 0x1001E6D, 0x1001E6C]	};
+    key <AD11>	{ [dead_circumflex, dead_diaeresis, dead_diaeresis, dead_abovering ] };
+    key <AD12>	{ [    dollar,   sterling,     0x100A72B,   0x100A72A ]	};
+    key <AC01>	{ [         q,          Q,           at,  Greek_OMEGA ]	};
+    key <AC02>	{ [         s,          S,           0x1001E63, 0x1001E62 ]	};
+    key <AC05>	{ [         g,          G,           0x10001E7,  0x10001E6 ]	};
+    key <AC06>	{ [         h,          H,           0x1001E25, 0x1001E24 ]	};
+    key <AC10>	{ [         m,          M,           mu,    masculine ]	};
+    key <AC11>	{ [    ugrave,    percent, 0x1000194,  0x1000263]	};
+    key <TLDE>	{ [twosuperior, asciitilde,     notsign,      notsign ]	};
+    key <BKSL>	{ [  asterisk,         mu,   dead_grave,   dead_breve ]	};
+    key <AB01>	{ [         w,          W,      lstroke,      Lstroke ]	};
+    key <AB03>	{ [ c,          C,  0x100010D , 0x100010C ]	};
+    key <AB07>	{ [     comma,   question,   dead_acute, dead_doubleacute ] };
+    key <AB08>	{ [ semicolon,     period, horizconnector,   multiply ]	};
+    key <AB09>	{ [     colon,      slash, periodcentered,   division ]	};
+    key <AB10>	{ [    exclam,    section, dead_belowdot, dead_abovedot ] };
+ 
+	include "level3(ralt_switch)"
+};
