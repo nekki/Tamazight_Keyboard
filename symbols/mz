@@ -1,5 +1,7 @@
-// Ce fichier contient la configuration du clavier tamazight en carctéres latins
-// bbelateche@gmail.com
+// Tamazight en caractères latin 
+// Badr eddine Belateche 
+// sosexpert@gmail.com
+
 partial alphanumeric_keys
 xkb_symbols "amazigh-latin" {
 
@@ -28,6 +30,7 @@ xkb_symbols "amazigh-latin" {
     key <AD12>	{ [    dollar,   sterling,     0x100A72B,   0x100A72A ]	};
     key <AC01>	{ [         q,          Q,           at,  Greek_OMEGA ]	};
     key <AC02>	{ [         s,          S,           0x1001E63, 0x1001E62 ]	};
+    key <AC03>	{ [         d,          D,           0x1001E0D, 0x1001E0C ]	};
     key <AC05>	{ [         g,          G,           0x10001E7,  0x10001E6 ]	};
     key <AC06>	{ [         h,          H,           0x1001E25, 0x1001E24 ]	};
     key <AC10>	{ [         m,          M,           mu,    masculine ]	};
