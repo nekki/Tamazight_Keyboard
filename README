@@ -2,7 +2,7 @@ Description:
 Ce projet concerne le developpement de composants pour l'utilisation d'un clavier amazigh (latin, tifinagh et français) sous linux.
 Tamazight en tifinagh a déjà été ajoutée (Berbère, Maroc...)
 Dans cette contribution, nous avons ajouté Amazigh (Tamazgha) qui correspond pour le moment à tamazight en caractères latins, mais nous ajouterons au fur et à mesure les autres caractères avec votre contribution eventuellement.
-Pour le moment, ces developpements concernent uniquement les systèmes fonctionnant sous gnome et ils ont été testés sur ubuntu Version 12.10 (quantal)
+Pour le moment, ces developpements concernent uniquement les systèmes fonctionnant sous gnome et ils ont été testés sur ubuntu/kubuntu
 
 Votre contribution est la bienvenue que ce soit pour appoorter des correctifs ou pour nous donner les resultats de vos tests sur les différentes distributions.
 
@@ -10,7 +10,7 @@ AVERTISSEMENT:
 Cette contribution est delivrée telle quelle. Nous ne nous considérons pas responsables des conséquences de son utilisation
 
 Nous sommes à votre disposition à l'adresse:
-sosexpert@gmail.com
+bbelateche@gmail.com
 
 Badr eddine Belateche
 
