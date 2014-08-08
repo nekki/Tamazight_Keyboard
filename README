@@ -19,10 +19,12 @@ Les fichiers necessaires pour la configuration du clavier
 
 Installation:
 1 - Télécharger l'archive (ZIP) qui se trouve dans https://github.com/nekki/Tamazight_Keyboard
+SAUVEGARDER LES REPERTOIRES /symbols et /rules qui sont dans /usr/share/X11/xkb
 2 - Extraire les fichiers dans un répértoire sur votre poste
-3 - Remplacer les repertoires /symbols et /rules qui sont dans /usr/share/X11/xkb par ceux fourni dans l'archive
-4 - Aller dans: paramètres systéme --> Agencement du clavier --> Onglet Agencements
-5 - Cliquer sur le (+) en bas à gauche pour ajouter une nouvelle langue, choisir Amazigh (Tamazgha) puis cliquer sur ajouter.
+3 - Ajouter le fichier mz qui est dans /symbols dans /usr/share/X11/xkb/symbols
+4 - Copier les fichiers du repertoire /rules fourni dans l'archive et ecraser les mêmes fichiers qui sont dans /usr/share/X11/xkb/rules
+5 - Aller dans: paramètres systéme --> Agencement du clavier --> Onglet Agencements
+6 - Cliquer sur le (+) en bas à gauche pour ajouter une nouvelle langue, choisir Amazigh (Tamazgha) puis cliquer sur ajouter.
 
 Utilisation:
 ẓ --> alt gr + z
