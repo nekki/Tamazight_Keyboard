@@ -25,7 +25,7 @@ SAUVEGARDER LES REPERTOIRES /symbols et /rules qui sont dans /usr/share/X11/xkb
 Il faut le faire avec droit root:
 Exemple:
 si vous avez dezippé dans /home/
-cp -R /home/symbols/mz /usr/share/X11/xkb/symbols/mz
+sudo cp -R /home/symbols/mz /usr/share/X11/xkb/symbols/mz
 4 - Copier les fichiers du repertoire /rules fourni dans l'archive et ecraser les mêmes fichiers qui sont dans /usr/share/X11/xkb/rules
 Il faut le faire avec les droits root
 5 - Aller dans: paramètres systéme --> Agencement du clavier --> Onglet Agencements
