@@ -22,7 +22,12 @@ Installation:
 SAUVEGARDER LES REPERTOIRES /symbols et /rules qui sont dans /usr/share/X11/xkb
 2 - Extraire les fichiers dans un répértoire sur votre poste
 3 - Ajouter le fichier mz qui est dans /symbols dans /usr/share/X11/xkb/symbols
+Il faut le faire avec droit root:
+Exemple:
+si vous avez dezippé dans /home/
+cp -R /home/symbols/mz /usr/share/X11/xkb/symbols/mz
 4 - Copier les fichiers du repertoire /rules fourni dans l'archive et ecraser les mêmes fichiers qui sont dans /usr/share/X11/xkb/rules
+Il faut le faire avec les droits root
 5 - Aller dans: paramètres systéme --> Agencement du clavier --> Onglet Agencements
 6 - Cliquer sur le (+) en bas à gauche pour ajouter une nouvelle langue, choisir Amazigh (Tamazgha) puis cliquer sur ajouter.
 
