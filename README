@@ -1,50 +1,86 @@
-Description:
-Ce projet concerne le developpement de composants pour l'utilisation d'un clavier amazigh (latin, tifinagh et français) sous linux.
-Tamazight en tifinagh a déjà été ajoutée (Berbère, Maroc...)
-Dans cette contribution, nous avons ajouté Amazigh (Tamazgha) qui correspond pour le moment à tamazight en caractères latins, mais nous ajouterons au fur et à mesure les autres caractères avec votre contribution eventuellement.
-Pour le moment, ces developpements concernent uniquement les systèmes fonctionnant sous gnome et ils ont été testés sur ubuntu/kubuntu
+Tamazight_keyboard:
+===================
+this project is a fork from [ekki/Tamazight_Keyboard](https://github.com/nekki/Tamazight_Keyboard) for adding (amazigh) latin keyboard layout for linux.
+**Tifinaghe** is added by the project [l'IRCAM (Institut Royal de la Culture Amazighe du Maroc)](http://www.ircam.ma/)
 
-Votre contribution est la bienvenue que ce soit pour appoorter des correctifs ou pour nous donner les resultats de vos tests sur les différentes distributions.
+Installing:
+-----------
+1.You have to download the archive file from [here](https://github.com/n-louahedj/Tamazight_Keyboard/archive/master.zip)
+2.Unzip the archive file using this command:
+  ```bash
+  unzip Tamazight_Keyboard-master.zip
+  ```
+**The following steps need to be done as a root**
+3.Copy the file symboles/dz to /usr/share/X11/xkb/symbols/
+```bash
+sudo cp Tamazight_Keyboard-master/symbols/dz /usr/share/X11/xkb/symbols/
+```
+4.Add this line `dz              Amazigh (Tamazgha)` in /usr/share/X11/xkb/base.lst just after `! layout`.
+5.Do the same as in step 4 but for this file /usr/share/X11/xkb/evdev.lst
+6.And add the following lines in /usr/share/X11/xkb/base.xml  after `<layoutList>` tag
+```xml
+    <layout>
+      <configItem>
+        <name>dz</name>
+        
+        <shortDescription>dz</shortDescription>
+        <description>Amazigh (Tamazgha)</description>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>french</name>
+            
+            <shortDescription>fr</shortDescription>
+            <description>French (Tamazgha)</description>
+            <languageList>
+              <iso639Id>fra</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>amazigh-latin</name>
+            
+            <shortDescription>dz</shortDescription>
+            <description>Amazigh (Tamazgha, Amazigh latin caracters)</description>
+            <languageList>
+            <iso639Id>fra</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+```
+7.And add the following lines in /usr/share/X11/xkb/evdev.xml  after `<layoutList>` opening tag
+```xml
+<layout>
+      <configItem>
+        <name>dz</name>        
+        <shortDescription>dz</shortDescription>
+        <description>Amazigh (Tamazgha)</description>        
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>french</name>
+            <description>French (Tamazgha)</description>
+	          <languageList>
+              <iso639Id>fra</iso639Id>
+            </languageList>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>amazigh-latin</name>
+            <description>Amazigh (Algeria, Amazigh latin caracters)</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+```
+8.Now you can go to the layout setting in your desktop manager and add or change your layout to `Algeria, Amazigh latin caracters`, and enjoy.
 
-AVERTISSEMENT:
-Cette contribution est delivrée telle quelle. Nous ne nous considérons pas responsables des conséquences de son utilisation
-
-Nous sommes à votre disposition à l'adresse:
-bbelateche@gmail.com
-
-Badr eddine Belateche
-
-Contenu:
-Les fichiers necessaires pour la configuration du clavier
-
-Installation:
-1 - Télécharger l'archive (ZIP) qui se trouve dans https://github.com/nekki/Tamazight_Keyboard
-SAUVEGARDER LES REPERTOIRES /symbols et /rules qui sont dans /usr/share/X11/xkb
-2 - Extraire les fichiers dans un répértoire sur votre poste
-3 - Ajouter le fichier mz qui est dans /symbols dans /usr/share/X11/xkb/symbols
-Il faut le faire avec droit root:
-Exemple:
-si vous avez dezippé dans /home/
-sudo cp -R /home/symbols/mz /usr/share/X11/xkb/symbols/mz
-4 - Copier les fichiers du repertoire /rules fourni dans l'archive et ecraser les mêmes fichiers qui sont dans /usr/share/X11/xkb/rules
-Il faut le faire avec les droits root
-5 - Aller dans: paramètres systéme --> Agencement du clavier --> Onglet Agencements
-6 - Cliquer sur le (+) en bas à gauche pour ajouter une nouvelle langue, choisir Amazigh (Tamazgha) puis cliquer sur ajouter.
-
-Utilisation:
-ẓ --> alt gr + z
-ṛ --> alt gr + r
-ṭ --> alt gr + t
-ꜫ --> alt gr + $
-ṣ --> alt gr + s
-ḍ --> alt gr + d
-ǧ --> alt gr + g
-ḥ --> alt gr + h
-Ɣ --> alt gr + ù
-
-
-
-
-
-
-Problèmes connus:
+Recommandations:
+----------------
+Copy the files that we mofitied befor doing any modifications.
